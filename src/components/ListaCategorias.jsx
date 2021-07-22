@@ -30,4 +30,14 @@ const ListaCategorias = () => {
       {categorias.map((categoria) => (
         <Link to={`/categoria/${categoria.id}`}>
           <li
-            className={`lista-categorias__categoria lista-categorias__categoria-
+            className={`lista-categorias__categoria lista-categorias__categoria--${categoria.id}`}
+          >
+            {categoria.nome}
+          </li>
+        </Link>
+      ))}
+    </ul>
+  );
+};
+
+export default ListaCategorias;

@@ -38,4 +38,16 @@ function App() {
         </Route>
         <Route path="/categoria/:id">
           <Categoria />
- 
+        </Route>
+        <Route path="/posts/:id">
+          <Post />
+        </Route>
+        <Route>
+          <Pagina404/>
+        </Route>
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
